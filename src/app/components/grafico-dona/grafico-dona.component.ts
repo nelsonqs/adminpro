@@ -6,9 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./grafico-dona.component.css']
 })
 export class GraficoDonaComponent implements OnInit {
-  @Input('chartLabels') doughnutChartLabels: Label[] = [];
-  @Input('chartData') doughnutChartData: MultiDataSet = [];
-  @Input('chartType') doughnutChartType: ChartType = '';
+  @Input('chartLabels') doughnutChartLabels: string[] = [];
+  @Input('chartData') doughnutChartData: number[] = [];
+  @Input('chartType') doughnutChartType: string = '';
 
 
   constructor() { }
